@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "kind": "ORDER_ID",
+      "pattern": "ORD\\d{11}"
+    },
+    {
+      "kind": "INTERNAL_HOST",
+      "pattern": "[a-z0-9-]+\\.corp\\.example\\.com"
+    },
+    {
+      "kind": "CN_NAME",
+      "pattern": "(?<=客户：)[\\u4e00-\\u9fa5]{2,4}"
+    }
+  ]
+}
